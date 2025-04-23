@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kul Wahad Arena</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="site-hero">
+    <div class="overlay">
+      <h1>Kul Wahad Arena</h1>
+      <p>The Final Test in the Deep Desert</p>
+      <a href="events.html" class="btn">Upcoming Events</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="support">
+      <h2>Support the Project</h2>
+      <a href="#" class="support-btn">Support Kul Wahad</a>
+    </section>
+  </main>
+  
+
+    <!-- EVENTS -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul class="events-list">
+        <li><strong>Spice Duel Tournament</strong> – May 15, 2025</li>
+        <li><strong>Ceremonial Blood Games</strong> – June 1, 2025</li>
+        <li><strong>Night of the Sietch Shadows</strong> – July 10, 2025</li>
+      </ul>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="register">
+      <h2>Register for an Event</h2>
+      <form action="#" method="post" class="register-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="alias">Player Name / Handle / Alias</label>
+        <input type="text" id="alias" name="alias" placeholder="Your Player Handle" required>
+
+        <label for="event">Select Event</label>
+        <select id="event" name="event" required>
+          <option value="">--Choose an Event--</option>
+          <option value="duel-tournament">Spice Duel Tournament</option>
+          <option value="ceremonial-blood-games">Ceremonial Blood Games</option>
+          <option value="night-sietch-shadows">Night of the Sietch Shadows</option>
+        </select>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- SUPPORT -->
+    <section id="support">
+      <h2>Support the Project</h2>
+      <a href="#" class="support-btn">Support Kul Wahad</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Kul Wahad Arena</p>
+  </footer>
+
+</body>
+</html>

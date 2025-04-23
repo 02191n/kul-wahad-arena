@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kul Wahad Arena – About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Kul Wahad Arena</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="about">
+      <h2>About Kul Wahad</h2>
+      <p><strong>Kul Wahad</strong> (“The Final Test”) stands as the ultimate crucible of honor, glory, and survival.</p>
+      <p>Sand‑scoured stands roar with anticipation as gladiators clash under scorching suns, each strike splintering the ancient sandstone and echoing across the desert.</p>
+      <p>Carved into the heart of the dunes like a titan’s arena, its towering ramparts, shadowy sub‑levels and gilded spectator decks host nobles, mystics, and thrill‑seekers alike.</p>
+      <p>Here, combatants vow blood‑oaths on sacred altars while the thunderous “Voice of the Sands” booms verdicts, transforming every duel into a legend etched forever in the dunes.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Kul Wahad Arena</p>
+  </footer>
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* 0) Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merriweather:wght@400;700&display=swap');
+
+/* 1) Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2) Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("./hero-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Merriweather', serif; /* new subtle body font */
+  line-height: 1.6;
+  color: #fff;
+  padding-top: 60px; /* space for fixed nav */
+}
+
+/* 3) Navbar */
+.site-nav {
+  background: rgba(34, 34, 34, 0.8);
+  padding: 1rem;
+  position: fixed; top: 0; width: 100%; z-index: 100;
+}
+.site-nav ul {
+  display: flex; justify-content: center; list-style: none;
+}
+.site-nav li {
+  margin: 0 1rem;
+}
+.site-nav a {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.site-nav a:hover {
+  opacity: 0.8;
+}
+
+/* 4) Hero */
+.site-hero {
+  background: transparent;
+  padding: 4rem 1rem; /* wraps to content */
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-content {
+  text-align: center; max-width: 800px; margin: 0 auto;
+}
+/* ← Title stays Cinzel Decorative */
+.hero-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 6rem; /* tweak as needed */
+  margin-bottom: 0.5rem;
+}
+/* Subtitle uses Merriweather */
+.hero-subtitle {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.site-hero .btn {
+  font-family: 'Merriweather', serif;
+  background: #e3a022;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.site-hero .btn:hover {
+  background: #c78f1c;
+}
+
+/* 5) Headings & Text */
+h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+p, li {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
+/* 6) Sections */
+main section {
+  background: transparent;
+  max-width: 800px;
+  margin: 0.25rem auto; /* tight gap */
+  padding: 2rem 1rem;
+}
+
+/* 7) Event Banner */
+.event-banner {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.event-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 8) Events List */
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 1.5rem;
+}
+.events-list li {
+  font-family: 'Merriweather', serif;
+  background: transparent;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+.events-list li:hover {
+  transform: translateY(-5px);
+}
+.events-list li strong {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #6A0DAD;
+}
+
+/* 9) Share Buttons */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.share-btn {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+.share-btn.twitter { background: #1DA1F2; }
+.share-btn.facebook { background: #3B5998; }
+.share-btn.reddit { background: #FF5700; }
+
+/* 10) Footer */
+.site-footer {
+  background: rgba(34,34,34,0.8);
+  text-align: center;
+  padding: 1rem;
+  color: #ccc;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}

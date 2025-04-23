@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kul Wahad Arena – Events</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Kul Wahad Arena</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- EVENTS -->
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <div class="battle-scene">
+    <img src="duel-poster.png" alt="Harkonnen vs Atreides MMA Poster">
+  </div>
+  <ul class="events-list">
+    <li><strong>Spice Duel Tournament</strong> – May 15, 2025</li>
+    <li><strong>Ceremonial Blood Games</strong> – June 1, 2025</li>
+    <li><strong>Night of the Sietch Shadows</strong> – July 10, 2025</li>
+    <li><strong>Sandstorm Showdown 1v1</strong> – August 20, 2025</li>
+  </ul>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Kul Wahad Arena</p>
+  </footer>
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>
